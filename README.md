@@ -1,4 +1,4 @@
-##Tech Stack
+## Tech Stack
 
 | Layer       | Technologies |  
 |-------------|--------------|  
@@ -7,6 +7,7 @@
 | Database | MySQL | 
  
 ---
+
 
 ## Installation and Setup
 ### 1. Clone the Repository
@@ -18,11 +19,21 @@ cd securin
 
 ### 2. Backend Setup (Express + MySQL)
 
+1. Install dependencies:
 ```bash
 cd backend
 npm install
 ```
 
+2. Update database configuration in `server.js`:
+```javascript
+const dbConfig = {
+  host: 'localhost',
+  user: 'your_mysql_username',
+  password: 'your_mysql_password',
+  database: 'securin'
+};
+```
 ### 3. Frontend Setup (React + Vite)
 
 ```bash
