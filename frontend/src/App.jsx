@@ -31,15 +31,6 @@ function App() {
     fetchData();
   }, []);
 
-  const renderTime = (minutes) => {
-    if (!minutes && minutes !== 0) return 'N/A';
-    const total = Number(minutes) || 0;
-    const hours = Math.floor(total / 60);
-    const mins = total % 60;
-    if (hours > 0) return `${hours}h ${mins}m`;
-    return `${mins}m`;
-  };
-
   return (
     <div className="app">
       <header className="header">
@@ -72,7 +63,7 @@ function App() {
                     <td>{recipe.title}</td>
                     <td>{recipe.cuisine || 'N/A'}</td>
                     <td>{recipe.rating || 'N/A'}</td>
-                    <td>{renderTime(recipe.total_time)}</td>
+                    <td>{recipe.total_time}m</td>
                     <td>{recipe.serves || 'N/A'}</td>
                   </tr>
                 ))
