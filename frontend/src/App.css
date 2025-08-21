@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #000 ;
+}
+
+.recipes-table {
+  width: 100%;
+}
+
+.recipes-table th {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.recipes-table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+
+
+
+
